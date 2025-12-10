@@ -55,8 +55,8 @@ def process_and_save_embedded_df(df, emb_column, output_filename):
 
 def main():
     # Define file paths
-    files_pattern = '/projects/wangc/rohan/hackathon/src/data_processed_complete/processed_chunk_*.tsv'
-    ccle_file = '/projects/wangc/rohan/hackathon/src/CCLE_gemma2b_emb_prompt.hidden_state.merge.tsv'
+    files_pattern = 'data_processed_complete/processed_chunk_*.tsv'
+    ccle_file = 'CCLE_gemma2b_emb_prompt.hidden_state.merge.tsv'
     
     # Load and combine datasets
     combined_df = load_data(files_pattern, ccle_file)
